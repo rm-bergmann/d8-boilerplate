@@ -5,7 +5,7 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: app-name-db-name
+      MYSQL_DATABASE: app_db
       MYSQL_ROOT_PASSWORD:
       MYSQL_USER:
       MYSQL_PASSWORD:
@@ -19,12 +19,12 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./web:/web
+      - ./:/app:cached
     restart: always
     environment:
-      DB_HOST: app-name-db
+      DB_HOST: app-name_db_1
       DB_USER:
       DB_PASS:
-      DB_DB: app-name-db-name
+      DB_DB: app_db
 volumes:
   db_data:

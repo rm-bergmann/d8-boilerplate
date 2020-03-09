@@ -1,4 +1,4 @@
-web_docker_sh   = docker exec -w /app -it app-name_web
+web_docker_sh   = docker exec -w /app -it app-name_web_1
 web_docker_sh_c = $(web_docker_sh) sh -c
 
 .DEFAULT_GOAL := up

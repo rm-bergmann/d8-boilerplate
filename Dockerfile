@@ -36,4 +36,7 @@ RUN chown -R www-data:www-data /app
 
 COPY apache-app-name.conf /etc/apache2/sites-enabled/000-default.conf
 
+# composer bug: Runs out of memory with composer update / install
+RUN export COMPOSER_MEMORY_LIMIT=-1
+
 WORKDIR /app
