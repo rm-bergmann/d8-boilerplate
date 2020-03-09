@@ -26,14 +26,14 @@ RUN rm -rf /var/www/html/*
 
 RUN rm -rf /var/lib/apt/lists/*
 
-ADD . /web
+ADD . /app
 
 RUN addgroup --gid 2047 shared
 
 RUN usermod www-data --append --groups shared
 
-RUN chown -R www-data:www-data /web
+RUN chown -R www-data:www-data /app
 
 COPY apache-app-name.conf /etc/apache2/sites-enabled/000-default.conf
 
-WORKDIR /web
+WORKDIR /app
