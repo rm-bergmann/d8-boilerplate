@@ -1,0 +1,30 @@
+version: '3'
+services:
+  db:
+    image: mariadb:10.2
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: app-name-db-name
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+  web:
+    depends_on:
+      - db
+    build: .
+    ports:
+      - "8090:80"
+    volumes:
+      - ./web:/web
+    restart: always
+    environment:
+      DB_HOST: app-name-db
+      DB_USER: root
+      DB_PASS: root
+      DB_DB: app-name-db-name
+volumes:
+  db_data:
