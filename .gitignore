@@ -26,7 +26,7 @@ sites/simpletest
 node_modules
 
 # DB Backups should live in here
-db-data
+db-data/*.sql
 
 # If you prefer to store your .gitignore file in the sites/ folder, comment
 # or delete the previous settings and uncomment the following ones, instead.
