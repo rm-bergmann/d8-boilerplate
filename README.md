@@ -18,7 +18,8 @@
 `$ make`
 
 ## Notes
-* If you do not have `make` installed run this command `sudo apt-get make`
+* I've included some essential modules which I use to start my projects, your project may not need all of them.
+* If you do not have `make` installed run this command: `sudo apt-get make`
 * If you are developing on windows, this will only work if you are using `WSL` or `WSL2`.
 * For best performance either `WSL2` or any native Linux OS is recommended, so you can run Docker natively in Linux. 
 * For localhost Drupal will load on port 8090. You can change this in the docker-compose file.
@@ -26,6 +27,5 @@
 
 ## ToDo's:
 * Run composer install in Dockerfile
-* Add custom essential modules to composer.json
 * Install Storybook and Cypress
 * Fix drupal console command not found error
