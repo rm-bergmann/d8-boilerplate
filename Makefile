@@ -15,7 +15,7 @@ shell:
 	@$(web_docker_sh) /bin/bash
 
 dbshell:
-	@$(web_docker_sh_c) "mysql -happ-name_db -uroot -proot app-name"
+	@$(web_docker_sh_c) "mysql -happ-name_db_1 -uroot -proot app-name"
 
 logs:
 	@docker-compose logs -f --tail=100

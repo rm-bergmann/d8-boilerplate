@@ -696,6 +696,6 @@ $databases['default']['default'] = array (
 ); 
 
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = '';
+$config_directories['sync'] = '../sync';
 
 
