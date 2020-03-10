@@ -27,4 +27,5 @@
 ## ToDo's:
 * Run composer install in Dockerfile
 * Add custom essential modules to composer.json
-* Install Storybook
+* Install Storybook and Cypress
+* Fix drupal console command not found error
