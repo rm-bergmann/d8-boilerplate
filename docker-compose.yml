@@ -3,7 +3,7 @@ services:
   db:
     image: mariadb:10.2
     ports:
-      - "3306:3306"
+      - "23360:3306"
     environment:
       MYSQL_DATABASE: app_db
       MYSQL_ROOT_PASSWORD: root
@@ -22,7 +22,7 @@ services:
       - ./:/app:cached
     restart: always
     environment:
-      DB_HOST: app-name_db_1
+      DB_HOST: d8-boilerplate_db_1
       DB_USER: root
       DB_PASS: root
       DB_DB: app_db
