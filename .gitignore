@@ -9,9 +9,10 @@
 
 # Ignore core and vendor when managing dependencies with Composer.
 web/core
-web/vendor
+vendor
 web/modules/contrib
 web/themes/contrib
+.vscode
 
 # Ignore configuration files that may contain sensitive information.
 # web/sites/*/settings*.php
