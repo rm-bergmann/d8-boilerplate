@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fd1c8ab1fefa66fc8cf5f6ab1ed9fd9",
+    "content-hash": "2609c3349a9dbf7ce821f54c0c1f0d37",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2710,29 +2710,29 @@
         },
         {
             "name": "drupal/crop",
-            "version": "1.5.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/crop.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
+                "url": "https://ftp.drupal.org/files/projects/crop-8.x-2.0.zip",
+                "reference": "8.x-2.0",
+                "shasum": "7e948d35f5d8c0a24515d3b7e37391da4d0b19d8"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.7.7 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1516357085",
+                    "version": "8.x-2.0",
+                    "datestamp": "1578492183",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3133,20 +3133,26 @@
         },
         {
             "name": "drupal/filefield_paths",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/filefield_paths.git",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/filefield_paths-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "3d74e96b1c8b7e02970be0b41643e8b3a617d008"
+                "url": "https://ftp.drupal.org/files/projects/filefield_paths-8.x-1.0-beta2.zip",
+                "reference": "8.x-1.0-beta2",
+                "shasum": "5235b41274fab8cdebd40396a199ebb024fb9d07"
             },
             "require": {
                 "drupal/core": "*"
+            },
+            "require-dev": {
+                "drupal/ctools": "*",
+                "drupal/pathauto": "*",
+                "drupal/redirect": "*",
+                "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -3154,8 +3160,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1451020739",
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1584455004",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3235,17 +3241,17 @@
         },
         {
             "name": "drupal/google_analytics",
-            "version": "2.4.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/google_analytics.git",
-                "reference": "8.x-2.4"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "f2e78ec140024ddcd19e027704ba73c33731f656"
+                "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "18179854152cae44be2a5ed5de5550bc6e131c70"
             },
             "require": {
                 "drupal/core": "~8.5"
@@ -3257,10 +3263,10 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.4",
+                    "version": "8.x-3.0",
                     "datestamp": "1548968580",
                     "security-coverage": {
                         "status": "covered",
@@ -5846,32 +5852,31 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.9.12",
+            "version": "v0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "90da7f37568aee36b116a030c5f99c915267edd4"
+                "reference": "e361c8b7e5114534078e0ce04ddc442b39018a3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/90da7f37568aee36b116a030c5f99c915267edd4",
-                "reference": "90da7f37568aee36b116a030c5f99c915267edd4",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e361c8b7e5114534078e0ce04ddc442b39018a3c",
+                "reference": "e361c8b7e5114534078e0ce04ddc442b39018a3c",
                 "shasum": ""
             },
             "require": {
                 "dnoegel/php-xdg-base-dir": "0.1.*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "jakub-onderka/php-console-highlighter": "0.3.*|0.4.*",
-                "nikic/php-parser": "~1.3|~2.0|~3.0|~4.0",
-                "php": ">=5.4.0",
-                "symfony/console": "~2.3.10|^2.4.2|~3.0|~4.0|~5.0",
-                "symfony/var-dumper": "~2.7|~3.0|~4.0|~5.0"
+                "jakub-onderka/php-console-highlighter": "0.4.*|0.3.*",
+                "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
+                "php": "^8.0 || ^7.0 || ^5.5.9",
+                "symfony/console": "~5.0|~4.0|~3.0|^2.4.2|~2.3.10",
+                "symfony/var-dumper": "~5.0|~4.0|~3.0|~2.7"
             },
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.2",
-                "hoa/console": "~2.15|~3.16",
-                "phpunit/phpunit": "~4.8.35|~5.0|~6.0|~7.0"
+                "hoa/console": "~3.16|~2.15"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
@@ -5886,7 +5891,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.9.x-dev"
+                    "dev-master": "0.10.x-dev"
                 }
             },
             "autoload": {
@@ -5916,7 +5921,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2019-12-06T14:19:43+00:00"
+            "time": "2020-03-15T22:52:37+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8447,14 +8452,12 @@
         "drupal/coffee": 10,
         "drupal/conditional_fields": 15,
         "drupal/filefield_paths": 10,
-        "drupal/focal_point": 10,
         "drupal/google_analytics_reports": 10,
         "drupal/graphql": 15,
         "drupal/graphql_twig": 10,
         "drupal/imageapi_optimize": 10,
         "drupal/imageapi_optimize_binaries": 15,
         "drupal/imageapi_optimize_tinypng": 10,
-        "drupal/svg_sanitizer": 15,
         "drupal/webpack": 15,
         "drupal/webpack_babel": 15
     },
