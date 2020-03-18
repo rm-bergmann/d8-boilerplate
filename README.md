@@ -1,4 +1,4 @@
-# Drupal 8.8.3 Composer
+# Drupal 8.8.4 Composer
 
 ### Boilerplate Drupal Composer Project in Docker
 This is a custom Drupal project intended as a Headless CMS set up to deliver content to multiple front end sites 
