@@ -74,7 +74,9 @@ Different projects have different requirements, so I have worked on designing a 
 * In production it's set to port 80.
 
 ## ToDo's:
-* Fix drupal console command not found error
+* Get Drupal console commands working
+* Set up Storybook
+* Set up Cypress
 
 [1]: https://www.amazeelabs.com/en/journal/using-twig-storybook-and-drupal
 [2]: https://www.drupal.org/project/graphql
