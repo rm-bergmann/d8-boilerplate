@@ -28,13 +28,6 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "core-js": "^3.6.4",
-    "cypress": "^4.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.1.0",
-    "eslint-loader": "^3.0.3",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.19.0",
     "mini-css-extract-plugin": "^0.9.0",
     "playroom": "^0.16.1",
     "react": "^16.13.0",
@@ -50,6 +43,15 @@
     "browser-sync": "^2.26.7",
     "bs-html-injector": "^3.0.3",
     "concat": "^1.0.3",
+    "cypress": "^4.1.0",
+    "cypress-cucumber-preprocessor": "^2.0.1",
+    "cypress-screenplay": "^0.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-babel": "^8.0.0",
@@ -65,5 +67,8 @@
     "gulp-watch": "^5.0.1",
     "less-style-library": "^1.2.6",
     "path": "^0.12.7"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
