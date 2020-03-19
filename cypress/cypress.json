@@ -1,0 +1,6 @@
+{
+  "viewportWidth": 1360,
+  "viewportHeight": 900,
+  "userAgent": "e2e",
+  "testFiles": "**/*.feature"
+}
