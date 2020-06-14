@@ -1,16 +1,21 @@
-FROM drupal:8.8.2-apache
+FROM drupal:8.9.0-apache
 
 USER root
 
 RUN apt-get update && apt-get install -y \
 	curl \
 	git \
-	mysql-client \
+	default-mysql-client \
 	vim \
 	wget \
-	libpng-dev
-
-RUN docker-php-ext-install gd mbstring
+	libpng-dev \
+	libfreetype6-dev \
+	libjpeg62-turbo-dev \
+	libonig-dev \
+	&& docker-php-ext-configure gd \
+	&& docker-php-ext-install -j$(nproc) gd \
+	&& docker-php-ext-install mysqli \
+	&& docker-php-ext-enable mysqli
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" && \
 	php composer-setup.php && \
@@ -19,22 +24,11 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 
 RUN rm -rf /var/www/html/*
 
-COPY --chown=www-data:www-data . /app
+COPY apache-app-name.conf /etc/apache2/sites-enabled/000-default.conf
 
 WORKDIR /app
 
-# These take too long...
-# ADD --chown=www-data:www-data . /app
-
-# COPY . /app
-
-# RUN chown -R www-data:www-data /app
-# RUN chmod -R 555 /app
-# RUN addgroup --gid 2047 shared
-# RUN usermod www-data --append --groups shared
-# RUN rm -rf /var/lib/apt/lists/*
-
-COPY apache-app-name.conf /etc/apache2/sites-enabled/000-default.conf
+COPY --chown=www-data:www-data . /app
 
 # Composer runs out of memory with composer update / install
 # RUN export COMPOSER_MEMORY_LIMIT=-1
@@ -49,10 +43,5 @@ RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/down
 	chmod +x drush.phar && \
 	mv drush.phar /usr/local/bin/drush
 
-RUN composer install
-
-# Install console
-# RUN mv drupal.phar /usr/local/bin/drupal && \
-#    chmod +x /usr/local/bin/drupal && \
-#    drupal init --override
+RUN composer install -n --no-autoloader --no-scripts --no-progress --no-suggest
 

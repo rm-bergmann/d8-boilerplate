@@ -1,4 +1,4 @@
-# Drupal 8.8.4 Composer
+# Drupal 8.9.0 Composer
 
 ### Boilerplate Drupal Composer Project in Docker
 This is a custom Drupal project intended as a Headless CMS set up to deliver content to multiple front end sites 
@@ -15,7 +15,7 @@ Different projects have different requirements, so I have worked on designing a 
 
 
 ### Essential Tools included (port number):
-* Drupal 8 (8090)
+* Drupal 8.9.0 (8090)
 * Gulp + Browsersync (Drupal Themeing) (8091) & (8092)
 * Gatsby / React (set port number `gatsy develop -p`)
 * Cypress
