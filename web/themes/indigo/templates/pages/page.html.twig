@@ -13,13 +13,19 @@
 {% endif %}
 
 {% if page.featured %}
-  {{ page.featured }}
+  <section class="featured">
+    <div class="content-container">
+      {{ page.featured }}
+    </div>
+  </section>
 {% endif %}
 
 {% if page.highlighted %}
-  <div class="highlighted">
-    {{ page.highlighted }}
-  </div>
+  <section class="highlighted">
+    <div class="content-container">
+      {{ page.highlighted }}
+    </div>
+  </section>
 {% endif %}
 
 {% if action_links %}
